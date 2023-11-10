@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahema's Home</title>
+    <link rel="stylesheet" type="text/css" href="otro.css">
+    <link rel="stylesheet" type="text/css" href="//necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <script src="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag@2.0.0/dist/js/multi-select-tag.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/habibmhamadi/multi-select-tag/dist/css/multi-select-tag.css"> 
+    <script
+      src="https://kit.fontawesome.com/7e5b2d153f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <header class="header">     
+                <nav class="navbar">
+                    <div class="logos">
+                        <img src="MEV1.png" class= " logo-icono"  alt="">
+                        <h1>FAHEMA'S</h1>  
+                    </div>
+                    <button class="toggle" aria-label="Abrir Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-menu-item"> Home</a></li>
+                        <li><a href="en_construccion.html" class="nav-menu-item"> Sing in</a></li>
+                        <li><a href="en_construccion.html" class="nav-menu-item"> Sing up</a></li>
+                        <li><a href="en_construccion.html" class="nav-menu-item"> About us</a></li>
+                    </ul>    
+                </nav>
+    </header>
+    <article>
+        <div class="informacion"> 
+            <div class="info1">
+                    <p>
+                    Unete a nosotros
+                    </p>
+                    <p id="info1-info2"> 
+                        Conecta con grandes desarrolladores a nivel mundial con solo un click
+                    </p>
+            </div>
+        </div>
+   
+    <div class="elementos">   
+        <form class="formulario">
+            Nombre:
+            <input type="text" required="" class="formulario-elements">
+            Email:
+            <input type="email" required="" class="formulario-elements" >
+            Edad:
+            <input type="number" required="" class="formulario-elements">
+            <select class="puesto" required=" " class="formulario-elements">
+                <option value="">Seleccione una opcion</option>
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="fullstack">Fullstack</option>
+                <option value="otro">Otro</option>
+            </select>
+            Inserte una Imagen:
+            <input type="file" name= "avatar" required="" class="formulario-elements">
+            <div class="selectorm" class="formulario-elements">
+                <select class="hobbies" id="hobbies" required=" " multiple>
+                    <option value="">Seleccione una opcion</option>
+                    <option value="Aprender idiomas">Aprender idiomas</option>
+                    <option value="Bailar">Bailar</option>
+                    <option value="Cocinar">Cocinar</option>
+                    <option value="Dibujar">Dibujar</option>
+                    <option value="Ejercicio ">Ejercicio </option>
+                    <option value="Leer ">Leer</option>
+                    <option value="Meditación">Meditación</option>
+                    <option value="Papiroflexia">Papiroflexia</option>             
+                    <option value="Resolver acertijos">Resolver acertijos</option>
+                    <option value="Yoga">Yoga</option>
+                </select> 
+            </div> 
+            <input type="submit">
+        </form>
+        <script>
+            new MultiSelectTag('hobbies') 
+        </script>
+    </div>
+    </article>
+    <footer>
+        <div class="cajainfo" >    
+            <h4 class="infofooter"> © Copyright Fahema's s.a ©</h4>
+        </div>
+    
+        <div class="cajaredes">
+            <p class = "red">Siguenos en:</p>
+            <ul class="redes">
+                <li><a href="https://www.instagram.com/ferd.17/" target="_blank" class = "red">Instagram</a></li>
+                <li><a href="https://www.facebook.com/fabianeduardo.ramirezduque" target="_blank" class = "red">Facebook</a></li>
+                <li><a href="https://twitter.com/Ferd_VI" target="_blank" class = "red">Twitter</a></li>
+                <li><a href="https://www.reddit.com/user/Ferd_V" target="_blank" class = "red">Reddit</a></li>
+                <li><a href="https://github.com/FerdVI" target="_blank" class = "red">Github</a></li>
+            
+            </ul>
+    
+        </div>
+    </footer>
+</body>
+</html>
